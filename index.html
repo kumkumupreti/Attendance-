@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location Tracking App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="menu">
+    <h2>Attendance</h2>
+    <ul id="member-list">
+      <!-- Members will be dynamically generated here -->
+    </ul>
+  </div>
+
+  <div id="map"></div>
+
+  <div class="timeline">
+    <h3>Visited Locations - Timeline View</h3>
+    <input type="date" id="date-picker" />
+    <div id="timeline-data">
+      <!-- Timeline data will be dynamically generated -->
+    </div>
+    <button id="date-filter" onclick="filterByDate()">Filter by Date</button>
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7VRrJc0nxBoH2WhemLcwhEqQnUCPfcTA"></script>
+  <script src="app.js"></script>
+</body>
+</html>
