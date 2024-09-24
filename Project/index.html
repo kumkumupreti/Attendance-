@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Location Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7VRrJc0nxBoH2WhemLcwhEqQnUCPfcTA&libraries=places"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black; 
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px; 
+        }
+
+        main {
+            display: flex;
+            height: 100vh; /* Full height of the viewport */
+        }
+
+        #map {
+            width: 50%; /* Adjusted to cover 50% of the width */
+            height: 100%; /* Full height of the parent */
+        }
+
+        #visitedLocations {
+            width: 50%; /* Adjusted to cover the other 50% */
+            padding: 20px;
+            overflow-y: auto; /* Add scrolling if content overflows */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Team Location Tracker</h1>
+    </header>
+    <main>
+        <section id="map"></section>
+        <section id="visitedLocations">
+            <h2>Visited Locations</h2>
+            <table id="locationTimeline">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Location</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <div id="map"></div>
+<div id="user-details">
+    <table id="user-details-table">
+        <!-- User details will be populated here -->
+    </table>
+</div>
+
+                    <!-- Data will be populated here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

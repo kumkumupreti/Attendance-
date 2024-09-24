@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black; 
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px; 
+}
+
+main {
+    display: flex;
+    height: 100vh; /* Set a fixed height for the main area */
+}
+
+#map {
+    width: 70%; /* Adjust to cover 70% of the width */
+    height: 100%; /* Full height of the parent */
+}
+#user-details {
+    width: 30%; /* Adjust as needed */
+    height: 100vh; /* Full height */
+    overflow-y: scroll; /* Scroll if content overflows */
+    float: right;
+}
+
+#user-details-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#user-details-table th, #user-details-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#locationDetails {
+    width: 30%; /* Keep at 30% width */
+    padding: 20px;
+    overflow-y: auto; /* Add scrolling if content overflows */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
